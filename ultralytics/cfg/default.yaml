@@ -2,7 +2,8 @@
 
 # Global configuration YAML with settings and hyperparameters for YOLO training, validation, prediction and export
 # For documentation see https://docs.ultralytics.com/usage/cfg/
-
+# 这里就是默认的参数设置，可以根据需求修改
+# cfg文件夹下datasets表示数据集的yaml配置文件，models表示模型的yaml配置文件，包括网络结构等等
 task: detect # (str) YOLO task, i.e. detect, segment, classify, pose, obb
 mode: train # (str) YOLO mode, i.e. train, val, predict, export, track, benchmark
 

@@ -1,0 +1,6 @@
+# 从原始仓库获取更新
+git fetch origin
+git merge origin/main   # 合并更新到本地
+
+# 推送到自己的仓库
+git push myorigin main

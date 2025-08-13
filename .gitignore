@@ -2,7 +2,8 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+# dataset
+mycoco2017/
 # C extensions
 *.so
 
