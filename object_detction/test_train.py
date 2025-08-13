@@ -18,7 +18,7 @@ def test():
 def train():
     # Load a pretrained YOLO11n model
     # # Load a model
-    # model = YOLO("yolo11n.yaml")  # build a new model from YAML
+    # model = YOLO("yolo11n.yaml")  # build a new model from YAML 可以修改网络、类别等信息。
     # model = YOLO("yolo11n.pt")  # load a pretrained model (recommended for training)
     # model = YOLO("yolo11n.yaml").load("yolo11n.pt")  # build from YAML and transfer weights
     model = YOLO("yolo11n.pt")
@@ -35,7 +35,10 @@ def train():
     metrics = model.val()
 
     # 预测图片目标识别Perform object detection on an image
-    results = model("object_detction/bus.jpg")  # Predict on an image
+    # results = model("object_detction/bus.jpg")  # Predict on an image
+    results = model("object_detction/zidane.jpg")  # Predict on an image
+    # results = model("object_detction/demo_data/small-vehicles1.jpeg")  # Predict on an image
+    # results = model("object_detction/demo_data/terrain2.png")  # Predict on an image
     results[0].show()  # Display results
 
     # Export the model to ONNX format for deployment
@@ -48,5 +51,4 @@ def main():
 
 
 if __name__ == "__main__":
-
-    main()
+    train()
